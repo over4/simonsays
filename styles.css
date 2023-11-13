@@ -1,0 +1,115 @@
+body {
+  text-align: center;
+  background-image: url('https://cdn.dribbble.com/users/315053/screenshots/3403146/space-travel-800x600loop.gif');
+  background-repeat: repeat;
+  background-size: cover;
+  
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid #FEF2BF;
+  border-radius: 20%;
+}
+.startButton {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Press Start 2P', cursive;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.startButton:hover {
+	background-color:#5cbf2a;
+}
+.startButton:active {
+	position:relative;
+	top:1px;
+}
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40%;
+  margin-top: 10%;
+  margin-bottom: 1%;
+  width: 20%;
+  opacity: 20%;
+  font-family: sans-serif;
+}
+.copyright{
+  color: white;
+  opacity: 20%;
+}
+@media (min-width: 100px) and (max-width: 1105px){
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+  
+  .btn {
+    margin: 25px;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    border: 10px solid #FEF2BF;
+    border-radius: 20%;
+  }
+  #level-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 5rem;
+    margin:  5%;
+    color: #FEF2BF;
+    padding-top: 10rem;
+  }
+}
