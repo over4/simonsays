@@ -1,9 +1,14 @@
 body {
   text-align: center;
   background-image: url('https://cdn.dribbble.com/users/315053/screenshots/3403146/space-travel-800x600loop.gif');
-  background-repeat: repeat;
-  background-size: cover;
-  
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Cover the entire area, may crop the image */
+  height: 100vh; /* Make sure the body takes at least the full height of the viewport */
+  width: 100vw; /* Ensure the body takes the full width of the viewport */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-size: 100% 100%; /* Stretch to fit exactly, may distort the image */
 }
 
 #level-title {
@@ -17,6 +22,7 @@ body {
   display: block;
   width: 50%;
   margin: auto;
+  height: 60vh;
 
 }
 
@@ -111,5 +117,10 @@ footer{
     margin:  5%;
     color: #FEF2BF;
     padding-top: 10rem;
+  }
+}
+@media (max-width: 685px){
+  .container{
+    height: 100vh;
   }
 }
